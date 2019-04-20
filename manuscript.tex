@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+
+\usepackage[dvipdfmx]{graphicx}
+
+%small packages
+\usepackage{color,amsmath,slashed,booktabs,braket,hyperref,bm,authblk,graphicx,amssymb}
+\usepackage[a4paper, total={16.5cm,22cm}]{geometry}
+%Check packages
+\RequirePackage[l2tabu, orthodox]{nag} %check old package
+\usepackage[all, warning]{onlyamsmath} %check non-amsmath equations %This is not compatible with tikz??
+
+% select fonts
+\usepackage{newtxtext}
+\usepackage[varg]{newtxmath} %varg changes not only g but also v, w, y
+\usepackage[utf8x]{inputenc} %[utf8] may have some troubles
+
+\usepackage[sort&compress,numbers, merge]{natbib}
+
+%set hyperref
+\hypersetup{
+  colorlinks = true,
+  linkcolor = blue,
+  citecolor = blue,
+}
+
+
+
+% For references from ADS
+\newcommand\apss{Astrophys. Space Sci.,\,}
+\newcommand\nat{Nature,\,}
+\newcommand\apj{Astrophys. J.\,}
+\newcommand{\aap}{Astron. Astrophys.\,}
+\newcommand{\mnras}{Mon. Not. Roy. Astron. Soc.\,}
+\newcommand{\apjl}{Astrophys. J. Lett.\,}
+\newcommand{\pasa}{Publications of the Astronomical Society of Australia\,}
+\newcommand{\sovast}{Soviet Astronomy\,}
+
+
+% ---------------------------------------------------- 
+\title{{\bfseries Title}}
+\author[1]{First author name}
+\author[1,2]{Second author name}
+\affil[1]{{\small \textit{Institution 1}}}
+\affil[2]{{\small \textit{Institution 2}}}
+\date{}
+% ---------------------------------------------------------------------
+
+
+
+%%%%%%%%%%%%%%%%% My macro %%%%%%%%%%%%%%%%%%%%%%%
+%\setcounter{chapter}{-1}
+
+% COMMENTS
+
+\newcommand{\vev}[1]{\left\langle #1\right\rangle}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand\Order{\mathop{\mathcal{O}}}
+
+\newcommand\unit[1]{\,\mathrm{#1}}
+\newcommand\eV{\unit{eV}}
+\newcommand\keV{\unit{keV}}
+\newcommand\MeV{\unit{MeV}}
+\newcommand\GeV{\unit{GeV}}
+\newcommand\TeV{\unit{TeV}}
+\newcommand\fb{\unit{fb}}
+\newcommand\pb{\unit{pb}}
+\newcommand\iab{\unit{ab^{-1}}}
+\newcommand\ifb{\unit{fb^{-1}}}
+\newcommand\ipb{\unit{pb^{-1}}}
+%\newcommand\fm{\unit{fm}}
+\newcommand\km{\unit{km}}
+\newcommand{\hc}{\mathrm{h.c.}}
+%\newcommand\solarmass{M_\odot}
+
+%benchmark
+\newcommand\bcm[3]{\left(\frac{#1}{#2}\right)^{#3}}
+
+\renewcommand{\arraystretch}{1.3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't change these lines
+\begin{document}
+\hfill Preprint  Nnumber
+
+{\let\newpage\relax\maketitle}
+
+% Abstract of the paper
+\begin{abstract}
+
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\clearpage
+
+
+\section{Introduction}
+\label{sec:introduction}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{utphysmod}
+\bibliography{manuscript} % if your bibtex file is called example.bib
+
+\end{document}
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
